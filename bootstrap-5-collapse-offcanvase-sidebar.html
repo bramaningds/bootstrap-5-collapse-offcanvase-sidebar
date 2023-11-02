@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Finance Layout Clone</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            background-color: var(--bs-light-bg-subtle);
+            height: 100vh;
+        }
+
+        .collapse.show .d-none {
+            display: block !important;
+        }
+
+        .nav .nav-item {
+            padding: 10px 10px;
+        }
+
+        .showing .collapse,
+        .show .collapse {
+            display: block;
+        }
+
+        main aside,
+        main section {
+            min-height: 0px;
+            max-height: calc(100vh - 77.5px);
+        }
+
+        .nav-item .nav-link:not(.active) {
+            color: var(--bs-body);
+        }
+
+        .nav-item .nav-link.active {
+            color: var(--bs-primary-color);
+            background-color: var(--bs-primary-bg-subtle);
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100 overflow-hidden">
+    <header class="border-bottom">
+        <h1>Header</h1>
+    </header>
+
+    <main class="d-flex h-100">
+        <aside class="flex-grow-0 flex-shrink-0 h-100 overflow-hidden overflow-y-auto border-end">
+            <div class="offcanvas-lg offcanvas-start">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target=".offcanvas-lg"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="collapse collapse-horizontal show">
+                        <nav class="navbar" style="width: 300px;">
+                            <ul class="nav nav-navbar flex-column w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="bi-house"></i><span class="ms-2">Home</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="flex-grow-1 overflow-y-auto bg-secondary-subtle">
+            <h4>The content</h4>
+
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="aside .collapse">
+                <span>Toggle sidebar</span>
+            </button>
+
+            <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target=".offcanvas-lg">
+                <span>Toggle offcanvas</span>
+            </button>
+
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="section .collapse">
+                <span>Show the content</span>
+            </button>
+
+            <div class="collapse fs-4">
+                <p class="text-body-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec diam hendrerit, ullamcorper
+                    nisi a, rutrum est. Nunc et sapien maximus, suscipit magna posuere, iaculis arcu. Duis dapibus
+                    eros justo, sed porttitor turpis bibendum vitae. Suspendisse porttitor accumsan eleifend. Etiam
+                    ultricies sapien quis nunc iaculis, et porttitor augue commodo. Aliquam nec dolor eget urna
+                    sollicitudin ullamcorper at vitae elit. Aenean leo lacus, pulvinar et pharetra sit amet,
+                    efficitur at est. Cras eleifend metus non tempor facilisis. Vestibulum iaculis erat libero,
+                    faucibus sodales nibh sollicitudin id. Praesent consequat nibh sed lectus posuere, et interdum
+                    turpis mattis. Curabitur vestibulum orci ac nunc interdum malesuada. Maecenas rutrum sapien sit
+                    amet suscipit volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <p class="bg-secondary-subtle">
+                    Vestibulum eget purus hendrerit, sodales elit non, gravida dolor. Cras congue condimentum urna
+                    et ultrices. Phasellus sed nibh in mi tincidunt consectetur. Aliquam a nisi nec velit consequat
+                    sodales vitae vitae metus. Etiam mollis massa nec pellentesque laoreet. Nulla facilisi. Ut vitae
+                    fermentum enim, non viverra purus. Donec id euismod nulla.
+                </p>
+                <p>
+                    Nunc viverra viverra massa ut eleifend. Etiam dignissim tortor nisi, sed commodo odio dictum
+                    porttitor. Donec vitae scelerisque ex. Donec orci leo, fringilla vel porttitor a, condimentum
+                    scelerisque arcu. Duis nec massa eget urna scelerisque rhoncus et ac leo. Nunc mattis neque quis
+                    egestas consequat. Fusce mattis eros vel ornare mollis. Nunc vehicula urna in ipsum consectetur
+                    dictum a id quam. Mauris egestas quis mauris blandit pharetra. Nulla id tortor eu massa ornare
+                    fermentum.
+                </p>
+                <p>
+                    Ut porta quam quis purus varius ultrices. Nunc ut dignissim lacus. Donec metus turpis, sodales
+                    eu ipsum et, sollicitudin fermentum urna. Nam molestie leo a erat consequat dictum. Cras in
+                    lacus ut libero aliquet dictum nec hendrerit magna. Donec imperdiet ultrices ligula in ornare.
+                    Praesent laoreet hendrerit metus eu maximus. Fusce sed diam mattis, placerat enim eget, vehicula
+                    nisi. Praesent iaculis eget tellus non porttitor. Fusce vitae nibh tempus, fringilla enim sed,
+                    vulputate odio. Duis at urna leo. Sed a tortor ultrices orci finibus rutrum. Suspendisse
+                    vehicula urna et mauris maximus, eget gravida enim viverra. Nulla vel ex orci. Aliquam auctor
+                    libero at risus hendrerit, sed accumsan ex lobortis.
+                </p>
+                <p>
+                    Ut eleifend mattis justo, ut venenatis diam lacinia id. Nullam vel condimentum risus. Aenean
+                    rutrum magna sit amet ullamcorper tempus. Praesent pellentesque pulvinar ex ut tempor. Nulla
+                    facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nunc lacinia mi
+                    rhoncus vehicula id vel magna. Donec euismod imperdiet tincidunt. Vestibulum auctor mauris
+                    eleifend mi mollis tincidunt. Aenean vitae urna enim. Integer fringilla ante in mollis
+                    facilisis. Nullam lectus ipsum, accumsan at luctus ac, auctor nec purus.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
